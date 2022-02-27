@@ -3,10 +3,10 @@ package main
 import "testing"
 
 func TestSayHello(t * testing.T) {
-	wants := "BonjouR"
+	wants := "Bonjour"
 	value := sayHello();
 
-	if (value != "BonjouR") {
+	if (value != wants) {
 		t.Errorf("sayHello()=%s, want %s",value,wants)
 	}
 }
